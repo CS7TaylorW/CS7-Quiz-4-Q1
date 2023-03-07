@@ -1,1 +1,10 @@
+current = int(input('Please enter a number'))
+prev = 0
 
+while True:
+    if prev % 2 == 0 and current % 2 == 0 and prev != 0 and current != 0:
+        print (prev, current)
+        break
+    else:
+        prev = current
+        current = int(input('Please enter a number'))
